@@ -21,5 +21,8 @@ http {
     index index.html;
     port_in_redirect off;
 
+    # include app supplied nginx conf
+    include /app/nginx/nginx.conf.d/*.conf;
+
   }
 }
